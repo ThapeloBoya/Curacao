@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marketing Panel</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="js/slick.css">
+  <link rel="stylesheet" type="text/css" href="js/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .slider {
+        width: 100vw;
+        margin: 0;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    .slick-active {
+      opacity: 1;
+    }
+    .slick-current {
+      opacity: 1;
+    }
+    .slick-dots {
+      bottom: 1vh;
+    }
+    .slick-dots li button:before {
+      color: #fff;
+      font-size: 2vw;
+    }
+    .slick-dots li.slick-active button:before {
+      color: #fff;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <section class="variable slider">
+	<div>
+      <a href="javascript:void(0);" onClick="parent.postMessage({type: 'LC-LobbyAction', action: 'LaunchGame', params: {gameId: '18-262'}}, '*');"><img src="img/aztec-vue-lobby-slider-1.jpg"></a>
+    </div>
+
+    
+   <!--  <div>
+      <a href="javascript:void(0);" onClick="parent.postMessage({type: 'LC-LobbyAction', action: 'SignUp', params: {}}, '*');"><img src="img/banner-resize-MAJ-4.jpg"></a>
+    </div> -->
+    <!-- <div>
+      <a href="javascript:void(0);" onClick="parent.postMessage({type: 'LC-LobbyAction', action: 'LaunchExternalLobby', params: {externalLobbyId: 1}}, '*');"><img src="img/mkp05.png"></a>
+    </div> -->
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".variable").slick({
+        mobileFirst: true,
+        responsive: true,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        arrows: false
+      });
+    });
+</script>
+
+</body>
+</html>

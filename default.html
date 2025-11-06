@@ -1,0 +1,132 @@
+<%@ Page Title=""  CodeFile="Default.aspx.cs"  Inherits="_Default" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+</head>>
+
+
+<body>
+    <form id="form1" runat="server">
+
+
+		
+
+	<!---- Jackpost Section ---->
+	<div class="container hidden-xs" style="display: flex;  width: 100%; margin-bottom: 0;">
+		<div class="jackpots" style="width: 1170px;">
+		
+		  <div class="col-md-3 Jackpotblock">  
+			<div class="jackpot-circle tot-jackpot"></div> 
+			<div style="display: inline-block;">
+				<span class="jacktotal">Total Jackpots</span> <br/> <em id="totalJackpots"></em><em>13,663,514.02 €</em>
+			</div>
+		  </div>
+		  
+		  <div class="col-md-3 Jackpotblock">
+			<div class="jackpot-circle jackpot-pinatas"></div> 
+			<div style="display: inline-block;">
+				<span>Jackpot Piñatas</span> <br/> <em id="jackpotPinatas" style="text-align: left !important;"></em><em>13,663,514.02 €</em> 
+			</div>
+		  </div>
+		  
+		  <div class="col-md-3 Jackpotblock">
+			<div class="jackpot-circle aztecs-millions"></div> 
+			<div style="display: inline-block;">
+				<span>Aztec's Millions</span> <br/> <em id="aztecsMillions"></em><em>13,663,514.02 €</em>
+			</div>
+		  </div>
+		  
+		  <div class="col-md-3 Jackpotblock">
+			<div class="jackpot-circle  shopping-spree"></div> 
+			<div style="display: inline-block;">
+				<span>Shopping Spree II</span> <br/> <em id="spiritOfTheInca"></em><em>13,663,514.02 €</em>
+			</div>
+		  </div>
+		  
+		</div>
+
+	</div>
+	
+    <!---- End Jackpost ---->
+	<div class="clear"></div>
+	  
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 remove__padding">
+				<h3 class="heading__h3">Hot Promotions</h3>
+			</div>
+		
+			<!-- cards #1 -->
+			<div id="card1" class="col-sm-4">
+			<div class="col-padding margin-bottom20">
+			<div class="span3">
+				<img src="placeholder.jpg" width="100%" class="img-responsive" alt=" ">
+				<div class="home-promo">
+					<p class="promo_sentence">We will double your first deposit at Dazzle Fortune up to a huge $500 + 50 Free Spins on Pig Winner slot! Use promo <b>code: WELCOME100</b></p>
+
+					<div class="home-promo-cta">
+					<div class="home-promo-cta-left">
+						<a style="cursor:pointer" data-toggle="modal" data-target="#signupModal" id="btnRegTop"><span class="buttonB">CLAIM NOW</span></a>
+					</div>
+					<div class="home-promo-cta-right">
+						<a href="#">Read More <i class="fa fa-info-circle"></i></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+			<!-- cards #2 -->
+			<div class="col-sm-4" style="padding: 0 7.5px;">
+			<div class="col-padding margin-bottom20">
+			<div class="span3">
+				<img src="placeholder.jpg" width="100%" class="img-responsive" alt=" ">
+				<div class="home-promo">
+					<p class="promo_sentence">Earn REAL MONEY bonus as you play! Each bet you place will bring you loyalty coins that can be exchanged to real cash with no wagering!</p>
+
+					<div class="home-promo-cta">
+					<div class="home-promo-cta-left">
+						<a style="cursor:pointer" data-toggle="modal" data-target="#signupModal" id="btnRegTop"><span class="buttonB">EARN COINS</span></a>
+					</div>
+					<div class="home-promo-cta-right">
+						<a href="#">Read More <i class="fa fa-info-circle"></i></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+			<!-- cards #3 -->
+			<div id="card3" class="col-sm-4">
+			<div class="col-padding margin-bottom20">
+			<div class="span3">
+				<img src="placeholder.jpg" width="100%" class="img-responsive" alt=" ">
+				<div class="home-promo">
+					<p class="promo_sentence">Experience the luxury gaming being part of our VIP Club. Faster cashouts, exclusives, cashbacks, personal VIP Managers and more are waiting!</p>
+
+					<div class="home-promo-cta">
+					<div class="home-promo-cta-left">
+						<a style="cursor:pointer" data-toggle="modal" data-target="#signupModal" id="btnRegTop"><span class="buttonB">PLAY NOW</span></a>
+					</div>
+					<div class="home-promo-cta-right">
+						<a href="#">Read More <i class="fa fa-info-circle"></i></a>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</form>
+
+
+</body>
+</html>
